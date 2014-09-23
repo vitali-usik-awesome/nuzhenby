@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+/* fonts import */
+@import url(http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic);
+
 /* reset by medic */
 * {padding:0; margin:0;}
 img {border:0 none;}
@@ -8,13 +11,21 @@ ul {list-style: none;}
 .hidden {display: none;}
 .clr:after {display:none; position:relative; content:' '; color:transparent; font-size:0; line-height:0; clear:both;}
 
-body {background: #000;}
+body {background: #000; font-family: 'Cuprum', sans-serif; font-weight: 400;}
 
 /* wrapper */
 .wrapper {width: 980px; margin: 0 auto; background: #fff;}
 
 /* up_banner */
 .up_banner {width: 980px; height: 89px;}
+
+/* main_nav */
+.main_nav {overflow: hidden;}
+	.main_nav ul {text-align: center; background-color: #f3f5f6; border-bottom: 1px solid #fff;}
+	.main_nav li {display: inline-block; text-align: center; padding: 0 24px; border-right: 1px solid #e8e8e8;}
+	.main_nav li:first-child {border-left: 1px solid #e8e8e8;}
+	.main_nav a {display: block; position: relative; text-decoration: none; font-size: 14px; line-height: 36px; height: 36px; color: #000;}
+	.main_nav a:hover {background-color: #fdfdfd;}
 
 /* header */
 .header
