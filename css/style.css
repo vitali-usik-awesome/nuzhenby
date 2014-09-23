@@ -11,7 +11,7 @@ ul {list-style: none;}
 .hidden {display: none;}
 .clr:after {display:none; position:relative; content:' '; color:transparent; font-size:0; line-height:0; clear:both;}
 
-body {background: #000; font-family: 'Cuprum', sans-serif; font-weight: 400;}
+body {background: #fff; font-family: 'Cuprum', sans-serif; font-weight: 400;}
 
 /* wrapper */
 .wrapper {width: 980px; margin: 0 auto; background: #fff;}
@@ -65,7 +65,25 @@ body {background: #000; font-family: 'Cuprum', sans-serif; font-weight: 400;}
 .button1 a {text-decoration: none; color: #fff; background: linear-gradient(to top, #ffba12, #ffe801); font-size: 14px; line-height: 30px; height: 30px; padding: 7px 12px;}
 
 /* context_adv */
-.context_adv
+.context_adv {border: 1px solid #dadada; margin-top: 36px;}
+	
+	.adv_uls {overflow: hidden;}
+	.context_adv .simple {display: block; position: relative; float: left; margin: 18px 0 18px 10px; width: 200px; line-height: 24px; color: #668ba7; list-style: disc; padding-left: 25px;}
+	.context_adv li {}
+	.context_adv .simple a {text-decoration: none; font-size: 14px; color: #668ba7;}
+
+	.context_adv .advanced {float: right; width: 230px; margin: 4px 0 18px 0px;}
+	.context_adv .advanced li {background: url(../img/adv_icon.png) 0 0 no-repeat; margin-top: 12px; padding-left: 82px; height: 74px; padding-bottom: 18px;}
+	.context_adv .advanced li:first-child {border-bottom: 1px solid #676767;}
+	.context_adv .advanced li:last-child {}
+	.context_adv .advanced a {font-size: 12px; line-height: 22px; color: #676767; text-decoration: none;}
+
+	.context_adv .adv_buttons {overflow: hidden;}
+	.context_adv .button_left {display: block; position: relative; float: left; margin: 0 0 19px 17px;}
+	.context_adv .button_right {display: block; position: relative; float: right; margin: 0 17px 19px 0;}
+
+
+
 
 /* news_wrapper */
 .news_wrapper
