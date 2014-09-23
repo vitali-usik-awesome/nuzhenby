@@ -28,7 +28,15 @@ body {background: #000; font-family: 'Cuprum', sans-serif; font-weight: 400;}
 	.main_nav a:hover {background-color: #fdfdfd;}
 
 /* header */
-.header
+.header {overflow: hidden; background-color: #d9e69a;}
+	.header .h_logo {display: block; position: relative; float: left; margin: 42px 38px 17px 0;}
+
+	.header .h_search {display: block; position: relative; float: left;}
+	.header .h_search ul {margin-top: 16px;}
+	.header .h_search li {display: inline-block; text-align: center;}
+	.header .h_search a {display: block; position: relative; padding: 0 10px; text-decoration: none; font-size: 11px; line-height: 21px; height: 21px; color: #a1ad69;}
+	.header .h_search a:hover {}
+	.header .h_search .h_active {background-color: #a1ad69; color: #fff;}
 
 /* context_adv */
 .context_adv
