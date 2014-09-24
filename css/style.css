@@ -145,17 +145,26 @@ body {background: #fff; font-family: 'Cuprum', sans-serif; font-weight: 400;}
 
 /* flea_wrapper */
 .flea_wrapper {}
-	.flea_wrapper {overflow: hidden;}
-		.flea_items {display: block; position: relative; float: left; overflow: hidden;}
+	.flea {overflow: hidden;}
+		.flea_items {display: block; position: relative; float: left; overflow: hidden; width: 700px;}
 		.flea_items .flea_item {display: block; position: relative; float: left;}
+		.flea_items .flea_item a {background: url(../img/flea_item.png) 0 2px no-repeat; padding: 199px 0 0 231px; width: 231px; height: 199px;}
 
 		.flea_pr {display: block; position: relative; float: right;}
 
 /* center_banner */
-.center_banner
+.center_banner {}
 
 /* info */
-.info
+.info {background: url(../img/info_bg.png) 0 100% repeat-x, #f4f5f7;}
+	.info h6 {font-size: 30px; font-weight: 400; line-height: 30px; padding: 32px 0 2px 0;}
+	.info_uls {overflow: hidden; padding-bottom: 90px;}
+		.info_uls ul {display: block; position: relative; float: left; margin: 28px 0 18px 20px; width: 205px; line-height: 20px; color: #668ba7; list-style: disc; padding: 10px 0 0 25px; border-top: 1px solid #d0d0d2;}
+		.info_uls ul:first-child {margin-left: 0;}
+		.info_uls ul:last-child {margin-right: 0;}
+		.info_uls li {margin: 0 0 10px -8px;}
+		.info_uls a {font-size: 14px; color: #668ba7;}
+		.info_uls a:hover {text-decoration: none;}
 
 /* auto_wrapper */
 .auto_wrapper
