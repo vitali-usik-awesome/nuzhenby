@@ -70,7 +70,8 @@ body {background: #fff; font-family: 'Cuprum', sans-serif; font-weight: 400;}
 	
 	.adv_uls {overflow: hidden;}
 	.context_adv .simple {display: block; position: relative; float: left; margin: 18px 0 18px 10px; width: 200px; line-height: 24px; color: #668ba7; list-style: disc; padding-left: 25px;}
-	.context_adv .simple a {text-decoration: none; font-size: 14px; color: #668ba7;}
+	.context_adv .simple a {font-size: 14px; color: #668ba7;}
+	.context_adv .simple a:hover {text-decoration: none;}
 
 	.context_adv .advanced {float: right; width: 230px; margin: 4px 0 18px 0px;}
 	.context_adv .advanced li {background: url(../img/adv_icon.png) 0 0 no-repeat; margin-top: 12px; padding-left: 82px; height: 74px; padding-bottom: 18px;}
@@ -86,18 +87,19 @@ body {background: #fff; font-family: 'Cuprum', sans-serif; font-weight: 400;}
 .gree_line {border-top: 1px solid #cddfb6; margin: 35px 0 30px 0;}
 .dotted_line {border-top: 1px dotted #cddfb6; margin: 26px 0 30px 0;}
 
+/* common styles */
+.content_title {background: url(../img/title_shadow.png) 100% 50% no-repeat;}
+.content_title h6 {font-size: 30px; font-weight: 400; line-height: 30px;}
+
+.content_links ul {text-align: center; margin: 16px 0 28px 0;}
+.content_links li {display: inline-block; margin-left: 10px; padding-right: 15px; background: url(../img/li_delimiter.png) 100% 50% no-repeat;}
+.content_links li:first-child {margin-left: 0;}
+.content_links li:last-child {background: none; padding-right: 0;}
+.content_links a {font-size: 14px; line-height: 24px; color: #668ba7;}
+.content_links a:hover {text-decoration: none;}
+
 /* news_wrapper */
 .news_wrapper {}
-	.news_title {background: url(../img/title_shadow.png) 100% 50% no-repeat;}
-	.news_title h6 {font-size: 30px; font-weight: 400; line-height: 30px;}
-
-	.news_wrapper .news_links ul {text-align: center; margin: 16px 0 28px 0;}
-	.news_wrapper .news_links li {display: inline-block; margin-left: 10px; padding-right: 15px; background: url(../img/li_delimiter.png) 100% 50% no-repeat;}
-	.news_wrapper .news_links li:first-child {margin-left: 0;}
-	.news_wrapper .news_links li:last-child {background: none; padding-right: 0;}
-	.news_wrapper .news_links a {font-size: 14px; line-height: 24px; color: #668ba7;}
-	.news_wrapper .news_links a:hover {text-decoration: none;}
-
 	.news_advanced {overflow: hidden;}
 		.news_one {display: block; position: relative; float: left; width: 480px;}
 		.news_one h2 {font-weight: 400; font-size: 24px; line-height: 28px; color: #000; margin: 17px 0;}
@@ -105,7 +107,7 @@ body {background: #fff; font-family: 'Cuprum', sans-serif; font-weight: 400;}
 		.news_one p {font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 20px; color: #676767; margin-bottom: 20px;}
 			.news_read_all {overflow: hidden;}
 				.news_read_all ul {display: block; position: relative; float: left;}
-				.news_read_all li {display: inline-block; padding-left: 15px; font-size: 10px; line-height: 12px; font-family: 'Open Sans', sans-serif; color: #676767;}
+				.news_read_all li {display: inline-block; padding-left: 15px; font-size: 10px; line-height: 14px; font-family: 'Open Sans', sans-serif; color: #676767;}
 				.news_read_all .comments {background: url(../img/commet_watch.png) 0 2px no-repeat; margin-right: 6px;}
 				.news_read_all .watches {background: url(../img/commet_watch.png) -36px 2px no-repeat;}
 
@@ -124,7 +126,30 @@ body {background: #fff; font-family: 'Cuprum', sans-serif; font-weight: 400;}
 			.news_small_desc p {font-family: 'Open Sans', sans-serif; font-size: 12px; line-height: 20px; color: #676767; margin-bottom: 20px;}
 
 /* market_wrapper */
-.market_wrapper
+.market_wrapper {overflow: hidden;}
+	.market {display: block; position: relative; float: left;}
+		.market .market_nav {height: 21px; margin: 2px 0 19px 0;}
+		.market .market_nav a {height: 21px; width: 21px; margin-right: 3px; background: url(../img/market_nav_not_active.png) 0 2px no-repeat; padding: 0 21px 21px 0; line-height: 21px;}
+		.market .market_nav .market_nav_active {background: url(../img/market_nav_active.png) 0 0 no-repeat; margin-right: 7px;}
+		.market .market_item_wrapper {overflow: hidden;}
+					.market_item {display: block; position: relative; float: left; margin-right: 36px; width: 148px;}
+					.market_item:last-child {margin-right: 0;}
+					.market_item p {font-family: 'Open Sans', sans-serif; font-size: 12px; line-height: 18px; color: #676767; margin: 20px 0 2px 0;}
+					.market_item b {background: url(../img/commet_watch.png) -34px 3px no-repeat; padding-left: 15px; font-family: 'Open Sans', sans-serif; font-size: 10px; line-height: 14px; color: #668ba7;}
+
+	.marker_pr {display: block; position: relative; float: right; width: 248px; border: 1px solid #cddfb6; margin-top: 4px;}
+		.marker_pr h2 {width: 248px; text-align: center; background: #cddfb6; line-height: 62px; font-weight: 400; font-size: 24px;}
+		.marker_pr ul {margin: 10px 0 18px 10px; width: 180px; line-height: 24px; color: #668ba7; list-style: disc; padding-left: 25px;}
+		.marker_pr a {font-size: 14px; color: #668ba7;}
+		.marker_pr a:hover {text-decoration: none;}
+
+/* flea_wrapper */
+.flea_wrapper {}
+	.flea_wrapper {overflow: hidden;}
+		.flea_items {display: block; position: relative; float: left; overflow: hidden;}
+		.flea_items .flea_item {display: block; position: relative; float: left;}
+
+		.flea_pr {display: block; position: relative; float: right;}
 
 /* center_banner */
 .center_banner
