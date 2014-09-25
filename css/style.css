@@ -146,9 +146,18 @@ body {background: #fff; font-family: 'Cuprum', sans-serif; font-weight: 400;}
 /* flea_wrapper */
 .flea_wrapper {}
 	.flea {overflow: hidden;}
-		.flea_items {display: block; position: relative; float: left; overflow: hidden; width: 700px;}
-		.flea_items .flea_item {display: block; position: relative; float: left;}
-		.flea_items .flea_item a {background: url(../img/flea_item.png) 0 2px no-repeat; padding: 199px 0 0 231px; width: 231px; height: 199px;}
+		.flea_items {display: block; position: relative; float: left; overflow: hidden; width: 750px;}
+		.flea_items .flea_item {display: inline-block; position: left; vertical-align: top; margin: 0 16px 18px 0; width: 231px;}
+		.flea_items .flea_item a {display: block; position: relative;float: left; overflow: hidden; text-decoration: none;}
+						.flea_img {display: block; position: relative; float: left; text-align: center; width: 231px;}
+					.flea_item a .flea_img {display: block; position: relative; width: 231px; height: 199px; overflow: hidden;}
+					.flea_item a .flea_img img {width: 231px; height: 199px;}
+					.flea_item a .flea_img .default {display: block; position: relative;}
+					.flea_item a .flea_img .shadow {display: block; position: absolute; top: 144px; left: 0; z-index: 990; width: 219px; height: 37px;}
+					.flea_link {display: block; position: relative; float: left; text-align: left; z-index: 999; color: #000;}
+					.flea_link i {font-size: 14px; color: #597c2f; font-style: normal;}
+					.flea_big {line-height: 24px; font-size: 24px; margin: -47px 0 0 19px; width: 231px;}
+					.flea_small {line-height: 14px; font-size: 14px; margin: -47px 0 0 19px; width: 194px;}
 
 		.flea_pr {display: block; position: relative; float: right;}
 
@@ -205,9 +214,6 @@ body {background: #fff; font-family: 'Cuprum', sans-serif; font-weight: 400;}
 			.vk {background: url(../img/social_buttons.png) 0 0 no-repeat;}
 			.fb {background: url(../img/social_buttons.png) -48px 0 no-repeat;}
 			.tw {background: url(../img/social_buttons.png) -94px 0 no-repeat;}
-	/*.social a {height: 29px; width: 30px; padding: 29px 0 0 30px; margin-right: 12px;}
-	.social a:first-child {margin-left: 75px;}
-		.vk {background: url(../media/social_buttons.png) 0 0 no-repeat;}*/
 
 	.f_copyright {display: block; position: relative; float: right;}
 		.f_copyright p {font-size: 12px; color: #54772a; line-height: 71px; font-family: 'Open Sans', sans-serif;}
