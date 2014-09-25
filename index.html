@@ -4,6 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>nuzhen.by</title>
   		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+  		<link rel="stylesheet" href="css/chosen.css">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -411,7 +412,37 @@
 			<!-- auto_wrapper -->
 			<div class="auto_wrapper">
 				<div class="auto_title">
-					
+					<div class="title">
+						<h6>Автобарахолка</h6>
+					</div>
+					<div class="auto_links">
+						<a class="auto_link_active" href="#">Грузовые</a>
+						<a href="#">Пикапы</a>
+						<a href="#">Легковые</a>
+					</div>
+					<div class="filter clr">
+						<div class="filterLine">
+							<select class="chosen-select">
+								<option disabled selected>Выбрать марку</option>
+								<option>Марка 1</option>
+								<option>Марка 2</option>
+							</select>
+						</div>
+						<div class="filterLine">
+							<select class="chosen-select">
+								<option disabled selected>Выбрать модель</option>
+								<option>Модель 1</option>
+								<option>Модель 2</option>
+							</select>
+						</div>
+						<div class="filterLine">
+							<select class="chosen-select">
+								<option disabled selected>Подобрать цену</option>
+								<option>Цена 1</option>
+								<option>Цена 2</option>
+							</select>
+						</div>
+					</div>
 				</div>
 				<div class="auto_content">
 					<div class="auto_big">
@@ -735,5 +766,11 @@
 			</div>
 			<!-- /footer -->
 		</div>
+		<!-- scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+		<script src="js/chosen.jquery.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(".chosen-select").chosen({disable_search_threshold: 10});
+		</script>
 	</body>
 </html>
