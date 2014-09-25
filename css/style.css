@@ -147,8 +147,8 @@ body {background: #fff; font-family: 'Cuprum', sans-serif; font-weight: 400;}
 .flea_wrapper {}
 	.flea {overflow: hidden;}
 		.flea_items {display: block; position: relative; float: left; overflow: hidden; width: 750px;}
-		.flea_items .flea_item {display: inline-block; position: left; vertical-align: top; margin: 0 16px 18px 0; width: 231px;}
-		.flea_items .flea_item a {display: block; position: relative;float: left; overflow: hidden; text-decoration: none;}
+		.flea_item {display: inline-block; position: left; vertical-align: top; margin: 0 16px 18px 0; width: 231px;}
+		.flea_item a {display: block; position: relative;float: left; overflow: hidden; text-decoration: none;}
 						.flea_img {display: block; position: relative; float: left; text-align: center; width: 231px;}
 					.flea_item a .flea_img {display: block; position: relative; width: 231px; height: 199px; overflow: hidden;}
 					.flea_item a .flea_img img {width: 231px; height: 199px;}
@@ -180,7 +180,22 @@ body {background: #fff; font-family: 'Cuprum', sans-serif; font-weight: 400;}
 		.forum_first {padding-bottom: 0;}
 
 /* auto_wrapper */
-.auto_wrapper
+.auto_wrapper {}
+	.auto_title {}
+
+	.auto_content {overflow: hidden;}
+		.auto_big {display: block; position: relative; float: left;}		
+		.auto_big .auto_item {display: inline-block; position: left; vertical-align: top; width: 480px;}
+		.auto_big .auto_item a {display: block; position: relative;float: left; overflow: hidden; text-decoration: none;}
+						.auto_img {display: block; position: relative; float: left; text-align: center; width: 480px;}
+					.auto_item a .auto_img {display: block; position: relative; width: 480px; height: 415px; overflow: hidden;}
+					.auto_item a .auto_img img {width: 480px; height: 415px;}
+					.auto_item a .auto_img .default {display: block; position: relative;}
+					.auto_item a .auto_img .shadow {display: block; position: absolute; top: 0; left: 0; z-index: 990; width: 480px; height: 415px;}
+					.auto_link {display: block; position: relative; float: left; text-align: left; z-index: 999; color: #000; line-height: 24px; font-size: 24px; margin: -384px 0 0 19px; width: 358px;}
+					.auto_link i {font-size: 18px; color: #597c2f; font-style: normal;}
+
+		.auto_small {display: block; position: relative; float: right; width: 500px; margin-right: -16px;}
 
 /* medicine_wrapper */
 .medicine_wrapper {}
